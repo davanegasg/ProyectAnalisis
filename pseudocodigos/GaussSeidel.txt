@@ -1,0 +1,26 @@
+1	Lea A, b, x0, iter, tol				
+2	n = numFilas(A)				
+3	cont = 0				
+4	err = tol + 1				
+5	mientras err > tol, cont <= iter haga				
+6		err = 0			
+7		para i = 1 hasta n haga			
+8			suma = 0		
+9			para j = 1 hasta n haga		
+10				si i != j entonces	
+11					suma = suma + A[i,j]*x0[j]
+12				finSi	
+13			finPara		
+14			x[i] = (b[i] - suma) / A[i,i]		
+15			aux = x[i] - x0[i]		
+16			err = err + (aux^2)		
+17			x0[i] = x[i]		
+18		finPara			
+19		err = err^0.5			
+20		cont = cont + 1			
+21	finMientras				
+22	si err < tol entonces				
+23		retorne x			
+24	sino				
+25		muestre no se llegó a la solución en iter iteraciones			
+26	finSi				

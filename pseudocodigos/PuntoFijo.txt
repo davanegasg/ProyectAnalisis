@@ -1,0 +1,22 @@
+Método de Punto Fijo
+
+1-	Leer  Xo,  tol,  iter
+2-	Yo = f(Xo)
+3-	 error= tol + 1
+4-	cont = 0
+5-	Mientras que  Yo != 0,  error > tol,  cont < iter
+6-		 Xm = g(Xo)
+7-	 	 Yo = f(Xm)
+8-		error = |Xm - Xo|
+9-	  	cont= cont + 1
+10-	    	Xo = Xm
+11-	finMientras
+12-	Si Yo = 0 entonces
+13-		Muestre Xo es una raíz 
+14-	sino
+15-		si error <= tol
+16-	 			Muestre raíz en Xo con error de error 
+17-	   	sino	
+18-		      		Muestre No se encontró raíz en iter iteraciones
+19-	 		finSi
+20-	 	finSi
