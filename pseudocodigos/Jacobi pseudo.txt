@@ -1,0 +1,28 @@
+1	Lea A, b, x0, iter, tol, lamda			
+2	n = numFilas(A)				
+3	cont = 0				
+4	err = tol + 1				
+5	mientras err > tol, cont <= iter haga				
+6		err = 0			
+7		para i = 1 hasta n haga			
+8			suma = 0		
+9			para j = 1 hasta n haga		
+10				si i != j entonces	
+11					suma = suma + A[i,j]*x0[j]
+12				finSi	
+13			finPara		
+14			x[i] = lamda*((b[i] - suma) / A[i,i]) + (1-lamda)*x0[i]		
+15			aux = x[i] - x0[i]		
+16			err = err + aux^2		
+17		finPara			
+18		err = err^0.5			
+19		para i = 1 hasta n haga			
+20			x0[i] = x[i]		
+21		finPara			
+22		cont = cont + 1			
+23	finMientras				
+24	si err < tol entonces				
+25		retorne x			
+26	sino				
+27		muestre no se llegó a la solución en iter iteraciones			
+28	finSi				

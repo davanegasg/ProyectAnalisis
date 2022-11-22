@@ -1,0 +1,23 @@
+1	Lea A, b				
+2	n = numFilas(A)				
+3	m = numColumnas(A)				
+4	si n != m entonces				
+5		muestre A no es cuadrada			
+6	sino				
+7		Ab = matrizAumentada(A,b)			
+8		para k=1 hasta n-1 haga			
+9			para i=k+1 hasta n haga		
+10				M = Ab[i,k] / Ab[k,k]	
+11				para j=k hasta n+1 haga	
+12					Ab[i,j] = Ab[i,j] - M*Ab[k,j] 
+13				finPara	
+14			finPara		
+15		finPara			
+16		para i=n hasta 1 paso -1			
+17			suma = 0		
+18			para j=i+1 hasta n		
+19				suma = suma + Ab[i,j] * X[j]	
+20			finPara		
+21			X[i] = (Ab[i,n+1] - suma) / Ab[i,i]		
+22		finPara			
+23	finSi								

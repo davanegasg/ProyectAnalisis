@@ -1,0 +1,34 @@
+Método de la secante 
+(Pseudocódigo)
+1	leer Xo, X1, tol, iter
+2	Yo = f(Xo)
+3	Y1 = f(X1)
+4	 Si Yo = 0
+5	 	Muestre Xo es raíz
+6	Sino	
+7	 	error = tol + 1
+8	 	cont = 0
+9	 	Mientras Y1!= 0, error > tol, cont < iter, Y1 – Yo != 0
+10	 		Xaux = X1
+11	 		Yaux = Y1
+12	 		X1 = X1 - Y1*(X1 - X0) / (Y1 - Y0)
+13	 		Y1 = f(X1)
+14	 		error = |X1 - Xaux|
+15	 		Xo = Xaux
+16	 		Yo = Yaux
+17	 		cont = cont +1
+18	 	finMientras
+19	 	si Y1 = 0
+20	 		Muestre X1 es raíz
+21	 	Sino
+22	 		si error <= tol
+23	 			Muestre raiz en Xm con un error de error
+24	 		sino
+25	 			si Y1 – Yo = 0
+26	 				Muestre el método de la secante no es adecuado para este caso
+27	 			sino
+28	 				Muestre no encontró raíz con iter iteraciones
+29	 			finSi
+30	 		finSi
+31	 	finSi
+32	 finSi
