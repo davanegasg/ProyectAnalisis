@@ -8,7 +8,7 @@
 2. Clone the proyect
 
 ```git
-git clone https://github.com/bened18/numerical-analysis.git
+git clone https://github.com/davanegasg/ProyectAnalisis.git
 ```
 
 3. Create a virtual environment for the project
@@ -67,14 +67,10 @@ python manage.py runserver localhost:8000
 python manage.py runserver 192.168.x.x:8000
 ```
 
-### User manual
-- [See](https://www.youtube.com/watch?v=QOztrMcN2Q8&ab_channel=Benjamindelatorre)
-
 ### Members
-* Andrés Guerra Montoya
-* Benjamin Eduardo de la Torre Rojas
-* Antonio Carmona Gaviria
-* Juan Esteban Cardona Ospina
+* Diego Alejandro Vanegas González
+* Jean Paul Cano Gómez
+* Sebastian Marin Gallego
 
 ### Technologies
 - [Python](https://www.python.org/about/gettingstarted/)
@@ -89,4 +85,4 @@ python manage.py runserver 192.168.x.x:8000
 - [PythonAnywhere](https://www.pythonanywhere.com/)
 
 ### Example of the project
-- [website](https://bened18.pythonanywhere.com/)
+- [website](http://diegouzu02.pythonanywhere.com/)
