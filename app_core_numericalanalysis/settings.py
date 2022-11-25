@@ -7,7 +7,7 @@ environment = "local"
 BASE_DIR = Path(__file__).ancestor(2)
 
 # Global URL
-BASE_URL = "https://bened18.pythonanywhere.com"
+BASE_URL = "http://diegouzu02.pythonanywhere.com"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -29,7 +29,7 @@ if environment == "local":
     ALLOWED_HOSTS = ["*", "127.0.0.1", "localhost"]
 else:
     DEBUG = False
-    ALLOWED_HOSTS = ["bened18.pythonanywhere.com"]
+    ALLOWED_HOSTS = ["diegouzu02.pythonanywhere.com"]
 
 # Application definition
 # Django Apps
@@ -136,8 +136,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/Bened18/app_core_numericalanalysis/public/media'
+MEDIA_ROOT = '/home/diegouzu02/app_core_numericalanalysis/public/media'
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = '/home/Bened18/app_core_numericalanalysis/public/static'
+STATIC_ROOT = '/home/diegouzu02/app_core_numericalanalysis/public/static'
 STATIC_URL = '/static/'
