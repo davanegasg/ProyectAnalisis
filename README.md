@@ -1,6 +1,4 @@
-# Numerical Analysis
-
-## JABA proyect
+# Numerical Analysis Method Solver
 
 ### How to install
 
