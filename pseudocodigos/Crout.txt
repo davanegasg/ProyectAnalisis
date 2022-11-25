@@ -1,0 +1,29 @@
+1	Lea A				
+2	n = numFilas(A)				
+3	m = numColumnas(A)				
+4	si n!=m entonces				
+5		muestre A no es cuadrada			
+6	sino				
+7		para k=1 hasta n			
+8			suma1 = 0		
+9			para p=1 hasta k-1		
+10				suma1 = suma1 + L[k,p]*U[p,k]	
+11			finPara		
+12			L[k,k] = A[k,k] - suma1		
+13			U[k,k] = 1		
+14			para i=k+1 hasta n		
+15				suma2 = 0;	
+16				para r=1 hasta k-1	
+17					suma2 = suma2 + L[i,r]*U[r,k]
+18				finPara	
+19				L[i,k] = (A[i,k] - suma2)	
+20			finPara		
+21			para j=k+1 hasta n		
+22				suma3=0	
+23				para s=1 hasta k-1	
+24					suma3=suma3 + L[k,s]*U[s,j]
+25				finPara	
+26				U[k,j] = (A[k,j] - suma3) / L[k,k]	
+27			finPara		
+28		finPara			
+29	finSi				

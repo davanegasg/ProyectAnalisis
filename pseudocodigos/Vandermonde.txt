@@ -1,0 +1,17 @@
+A, b, x0, tolerancia
+
+n = tamaño de b, x = 0, x0 = 0.
+
+para k = 1, 1000
+ para i = 1, n
+   x[i] = 0.0
+   para j = 1, n
+     si j < i
+       x[i] = x[i]+(A[i,j]*x[j])
+     si j > i
+       x[i] = x[i]+(A[i,j]*x0[j])
+   x[i] = (b[i]-x[i])/A[i,i]
+ x0 = x
+ si ||A*x-b|| < tolerancia
+   Solucion = 1
+   break
